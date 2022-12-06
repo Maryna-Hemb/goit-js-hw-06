@@ -15,7 +15,7 @@ const fullListItemsEl = makeMarkupIngredientsEl(ingredients);
 ingredientsItemsEl.append(...fullListItemsEl);
 console.log(ingredientsItemsEl);
 
-// ВАРІАНТИ РОЗВ'ЯЗКУ альтернативні
+// ВАРІАНТИ РОЗВ'ЯЗКУ альтернативний запис
 // Перебирання масиву
 
 // A) forEach + .push()
@@ -29,7 +29,7 @@ console.log(ingredientsItemsEl);
 // });
 // ingredientsItemsEl.append(...fullListItemsEl);
 
-// Б) .map()
+// Б) .map() для циклу
 
 // const fullListItemsEl = ingredients.map(ingredient => {
 //   const listItemEl = document.createElement('li');

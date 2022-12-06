@@ -8,7 +8,7 @@ categoriesItemEl.forEach(item => {
   console.log(`Elements: ${categoryInnerList.length}`);
 });
 
-// ВАРІАНТИ РОЗВ'ЯЗКУ альтернативні
+// ВАРІАНТИ РОЗВ'ЯЗКУ альтернативний запис
 
 // A) for... of
 // for (const categoryListDataEl of categoriesItemEl) {
