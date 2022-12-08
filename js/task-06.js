@@ -3,15 +3,11 @@ const inputEl = document.querySelector('#validation-input');
 inputEl.addEventListener('blur', onInputCheckValidation);
 
 function onInputCheckValidation(event) {
-  if (event.currentTarget.value.length !== Number(inputEl.dataset.length)) {
-    inputEl.classList.add('invalid');
+  if (inputEl.value.length === Number(inputEl.dataset.length)) {
+    console.log(inputEl.value.length);
+    console.log(Number(inputEl.dataset.length));
+    inputEl.classList.replace('invalid', 'valid');
   } else {
-    inputEl.classList.add('valid');
+    inputEl.classList.add('invalid');
   }
-}
-
-inputEl.addEventListener('click', onInputreset);
-function onInputreset(event) {
-  inputEl.addEventListener('blur', onInputCheckValidation);
-  event.currentTarget.value = '';
 }

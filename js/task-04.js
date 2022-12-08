@@ -10,10 +10,8 @@ const onCounterAdd = () => {
 };
 
 const onCounterRemove = () => {
-  if (counterValue >= 1) {
-    counterValue -= 1;
-    valueEl.textContent = counterValue;
-  }
+  counterValue -= 1;
+  valueEl.textContent = counterValue;
 };
 
 addListenerEl.addEventListener('click', onCounterAdd);
