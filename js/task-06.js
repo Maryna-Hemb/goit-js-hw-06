@@ -9,3 +9,9 @@ function onInputCheckValidation(event) {
     inputEl.classList.add('valid');
   }
 }
+
+inputEl.addEventListener('click', onInputreset);
+function onInputreset(event) {
+  inputEl.addEventListener('blur', onInputCheckValidation);
+  event.currentTarget.value = '';
+}
